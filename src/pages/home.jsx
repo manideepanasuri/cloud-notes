@@ -38,7 +38,7 @@ export default function Home() {
     
   useEffect(()=>{
     setProgress(40);
-    if(auth){getNotes()}
+      if(auth){getNotes()}
     setProgress(100);
   },[auth,token]);  
     
