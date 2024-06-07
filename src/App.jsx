@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/home";
@@ -11,7 +11,7 @@ import Userstate from "./context/user/Userstate";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home/>
